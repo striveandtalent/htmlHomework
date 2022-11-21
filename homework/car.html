@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<style>
+		.outroad {
+			width: 780px;
+			height: 480px;
+			border: 3px solid red;
+			border-radius: 15px;
+
+		}
+
+		.inroad {
+			width: 700px;
+			height: 400px;
+			margin: auto;
+			margin-top: 40px;
+			border: 3px solid seagreen;
+			border-radius: 15px;
+
+		}
+
+		.car {
+			width: 40px;
+			height: 40px;
+			position: absolute;
+			top: 15px;
+			left: 12px;
+			z-index: 99;
+			animation: ;
+		}
+
+		#qqq:hover {
+			animation-play-state: paused;
+		}
+
+		.car {
+			animation: myfirst 6s linear infinite;
+		}
+
+		@keyframes myfirst {
+		    0% {
+		        left: 0px;
+		        top: 0px;
+		    }
+		    25% {
+		        left: 750px;
+		        top: 0px;
+		    }
+		    50% {
+		        left: 750px;
+		        top: 440px;
+		    }
+		    75% {
+		        left: 0px;
+		        top: 440px;
+		    }
+		    100% {
+		        left: 0px;
+		        top: 0px;
+		    }
+		}
+		/* 浏览器兼容 */
+		
+		@-webkit-keyframes myfirst {
+		    0% {
+		        left: 0px;
+		        top: 0px;
+		    }
+		    25% {
+		        left: 750px;
+		        top: 0px;
+		    }
+		    50% {
+		        left: 750px;
+		        top: 440px;
+		    }
+		    75% {
+		        left: 0px;
+		        top: 440px;
+		    }
+		    100% {
+		        left: 0px;
+		        top: 0px;
+		    }
+		}
+		
+		@-moz-keyframes myfirst {
+		    0% {
+		        left: 0px;
+		        top: 0px;
+		    }
+		    25% {
+		        left: 750px;
+		        top: 0px;
+		    }
+		    50% {
+		        left: 750px;
+		        top: 440px;
+		    }
+		    75% {
+		        left: 0px;
+		        top: 440px;
+		    }
+		    100% {
+		        left: 0px;
+		        top: 0px;
+		    }
+		}
+	</style>
+
+	<body>
+		<div class="outroad">
+			<div class="inroad"></div>
+		</div>
+		<img src="./img/car.jpg" alt="小车" id="qqq" class="car">
+	</body>
+</html>
