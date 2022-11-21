@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+
+		<input type="text" name="text_one" id="text_one" placeholder="请输入内容"><br>
+		<input type="text" name="text_two" id="text_two"><br>
+		<input type="button" value="复制" onclick="myfunction()"><br>
+		<span id="span"></span>
+
+		<script>
+			function myfunction() {
+
+				var text_one = document.getElementById("text_one");
+				var text_two = document.getElementById("text_two");
+				document.getElementById("text_two").value = document.getElementById("text_one").value;
+				document.getElementById("span").innerHTML = "复制成功";
+				return true;
+			}
+		</script>
+	</body>
+</html>

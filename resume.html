@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	<body>
+		<form method="">
+			姓名：<input type="text" name="" id="name" value="" /><br>
+			性别：<input type="radio" name="sex" id="man" value="man">男
+			<input type="radio" name="sex" id="woman" value="woman">女<br>
+			密码：<input type="password" name="" id="password" value="" /><br>
+			血型：<input type="radio" name="blood" id="O">O
+			<input type="radio" name="blood" id="A">A
+			<input type="radio" name="blood" id="B">B
+			<input type="radio" name="blood" id="AB">AB <br>
+			性格：<input type="checkbox" name="" id="reqing">热情大方
+			<input type="checkbox" name="" id="wenrou">温柔体贴
+			<input type="checkbox" name="" id="duoqing">多情善感 <br>
+			文件：<input type="file" name="" id=""><br>
+			简介：<input type="text" id="introduce"><br>
+			城市：<select name="city" id="">
+				<option value="">四川</option>
+				<option value="">成都</option>
+				<option value="">上海</option>
+				<option value="">安徽</option>
+				<option value="">北京</option>
+			</select>
+			<br>
+			<input type="submit" value="提交" onclick="myfunction()">
+			<input type="reset" value = "重置">
+		</form>
+		<script>
+			function myfunction() {
+				//验证姓名
+				var name = document.getElementById("name").value;
+				if (name == null || name == "") {
+					alert("请输入姓名")
+					return false;
+				}
+				//验证密码
+				var password = document.getElementById("password").value;
+				if (password == null || password == "" || password.length < 6) {
+					alert("密码最少6位且不能为空！")
+				}
+				//验证性别
+				var man = document.getElementById("man");
+				var woman = document.getElementById("woman");
+				if (man.checked || woman.checked) {
+
+				} else {
+					alert("请选择性别！")
+					return false;
+				}
+				//验证血型
+				var O = document.getElementById("O")
+				var A = document.getElementById("A")
+				var B = document.getElementById("B")
+				var AB = document.getElementById("AB")
+				if (O.checked || A.checked || B.checked || AB.checked) {
+
+				} else {
+					alert("请选择血型！")
+					return false;
+				}
+				//验证性格
+				var rq = document.getElementById("reqing");
+				var wr = document.getElementById("wenrou");
+				var dq = document.getElementById("duoqing");
+				if (rq.checked || wr.checked || dq.checked) {
+
+				} else {
+					alert("请选择性格！")
+					return false;
+				}
+				//验证简介
+				var introduce = document.getElementById("introduce").value;
+				if (introduce == null || introduce == "") {
+					alert("请填写简介！")
+					return false;
+				}
+			}
+		</script>
+	</body>
+</html>
