@@ -1,0 +1,35 @@
+div {
+    border: 1px;
+    color: blueviolet;
+}
+.top {
+    background-color: aquamarine;
+}
+.name {
+    background-color:darkgrey;
+    text-decoration: underline;
+}
+.age {
+    background-color: darkseagreen;
+    text-decoration: underline;
+}
+.sex {
+    background-color: darkseagreen;
+    text-decoration: underline;
+}
+.hobby {
+    background-color: darkseagreen;
+    text-decoration: underline;
+}
+.education {
+    background-color: darkseagreen;
+    text-decoration: underline;
+}
+.introduce {
+    background-color: darkseagreen;
+    text-decoration: underline;
+}
+.bottom {
+    background-color: darkseagreen;
+    text-decoration: underline;
+}
